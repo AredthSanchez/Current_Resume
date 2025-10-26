@@ -26,12 +26,12 @@
 
 
 \pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
+\fancyhf{}
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Adjust margins (ULTRA-COMPRESSION ON MARGINS)
+% ULTRA-COMPRESSION ON MARGINS
 \addtolength{\oddsidemargin}{-0.65in} 
 \addtolength{\evensidemargin}{-0.65in} 
 \addtolength{\textwidth}{1.3in}       
@@ -50,11 +50,11 @@
   \vspace{-2pt}\scshape\raggedright\large  
 }{}{0em}{}[\color{black}\titlerule \vspace{-1pt}] 
 
-% Ensure that generate pdf is machine readable/ATS parsable
+% Ensures that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
 
 %-------------------------
-% Custom commands (MAXIMUM COMPRESSION)
+% Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
     {#1 \vspace{-3pt}} 
@@ -87,7 +87,7 @@
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-% Subheading list start (Moved closer to section title)
+% Subheading list start
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]\vspace{-5pt}} 
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
