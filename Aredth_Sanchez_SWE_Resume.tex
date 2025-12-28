@@ -1,0 +1,201 @@
+%-------------------------
+% Resume in Latex
+% Author : Aredth Sanchez
+% Based off of: https://github.com/sb2nov/resum
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article} % Base size 10pt
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[colorlinks=true,linkcolor=black,urlcolor=black,citecolor=black]{hyperref} % CHANGED TO BLACK
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5} % ADDED FOR ICONS
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+\usepackage[default]{sourcesanspro}
+
+% SCALE ALL FONT SIZES BY 1.05 (10.5pt = 10pt * 1.05)
+\usepackage{graphicx}
+\usepackage{relsize}
+\renewcommand{\normalsize}{\fontsize{10.5}{12.6}\selectfont} % 10.5pt with 12.6pt line spacing (1.2 ratio)
+
+% Define smaller font sizes based on 10.5pt
+\renewcommand{\small}{\fontsize{9.45}{11.34}\selectfont}      % 90% of 10.5pt = 9.45pt
+\renewcommand{\large}{\fontsize{12.6}{15.12}\selectfont}      % 120% of 10.5pt = 12.6pt
+\renewcommand{\Large}{\fontsize{14.7}{17.64}\selectfont}      % 140% of 10.5pt = 14.7pt
+\renewcommand{\LARGE}{\fontsize{16.8}{20.16}\selectfont}      % 160% of 10.5pt = 16.8pt
+\renewcommand{\huge}{\fontsize{18.9}{22.68}\selectfont}       % 180% of 10.5pt = 18.9pt
+\renewcommand{\Huge}{\fontsize{21}{25.2}\selectfont}          % 200% of 10.5pt = 21pt
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% ADJUSTED MARGINS TO ACCOMMODATE 10.5PT FONT
+\addtolength{\oddsidemargin}{-0.70in}  % INCREASED FROM -0.65in TO -0.70in
+\addtolength{\evensidemargin}{-0.70in} % INCREASED FROM -0.65in TO -0.70in
+\addtolength{\textwidth}{1.4in}        % INCREASED FROM 1.3in TO 1.4in
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}      
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\setlength\itemsep{-0.3em}
+
+% Sections formatting (Keeps subheadings close to section title)
+\titleformat{\section}{
+  \vspace{-2pt}\scshape\raggedright\large  
+}{}{0em}{}[\color{black}\titlerule \vspace{-1pt}] 
+
+% Ensures that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-4pt}}  % CONSISTENT FOR ALL SECTIONS
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-4pt}\item  % CONSISTENT FOR ALL SECTIONS
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}  % CONSISTENT FOR ALL SECTIONS
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \vspace{-4pt}\item  % NOW MATCHES \resumeSubheading
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\  % KEPT AS \small#1 - NOT bolded
+    \end{tabular*}\vspace{-7pt}  % NOW MATCHES \resumeSubheading
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}  % CONSISTENT FOR ALL SECTIONS
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+% Subheading list start - CONSISTENT FOR ALL SECTIONS
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]\vspace{-6pt}}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-8pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Aredth Sanchez} \\ \vspace{8pt}
+    \small
+    \faPhone* \, 915-224-7736 \quad 
+    \faEnvelope \, \href{mailto:aasanchez28@miners.utep.edu}{\underline{aasanchez28@miners.utep.edu}} \quad
+    \faLinkedin \, \href{https://linkedin.com/in/aredthsanchez}{\underline{linkedin.com/in/aredthsanchez}} \quad
+    \faGithub \, \href{https://github.com/AredthSanchez}{\underline{github.com/AredthSanchez}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {The University of Texas at El Paso}{El Paso, TX}
+      {B.S. of Engineering in Computer Science; Concentration in Data Analytics, Minor in Mathematics | GPA: 3.82}{Expected: Dec 2028}
+      \resumeItemListStart
+        \resumeItem{\textbf{Relevant Coursework:} Elementary Data Structures \& Algorithms, Computational Thinking, Discrete Math, Calculus 2}
+        \resumeItem{\textbf{Related Clubs:} Coding Interview Club (CIC), ColorStack, CodePath, Association for Computing Machinery (ACM), Society of Hispanic Professional Engineers (SHPE)}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Tech Exchange Fellow}{Jan 2026 - Present}
+      {CodePath}{Remote}
+      \resumeItemListStart
+        \resumeItem{Selected for an industry-led software engineering program to apply academic concepts to professional development workflows and AI applications.}
+        \resumeItem{Developing production-level software under the mentorship of senior engineers, collaborating in a team environment and adhering to professional style guides and modular architecture.}
+        \resumeItem{Practicing system design and algorithmic problem-solving through expert-led instruction, structuring solutions such that they meet specific performance and scalability requirements.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Developer Intern}{May 2025 -- July 2025}
+      {El Paso Water}{El Paso, TX}
+      \resumeItemListStart
+        \resumeItem{Built Azure Virtual Agents with Microsoft Azure AI services and structured knowledge bases (SOP's, PDF's), creating search schemas using JSON for natural language retrieval of documentation for rainfall measurement data and drainage system design manuals.}
+        \resumeItem{Automated workflows using Power Automate, SharePoint, and Python to maintain real-time knowledge base updates for virtual agents.}
+        \resumeItem{Collaborated with Agile teams to implement backend automation, improving virtual agent accuracy and reducing manual work by 70\%.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer Fellow}{May 2025 -- June 2025}
+      {Cornell Tech}{Remote}
+      \resumeItemListStart
+        \resumeItem{Selected from over 4,000+ applicants for the Break Through Tech Sprinternship\texttrademark{} program. Worked under the mentorship of professional data scientists and software engineers to gain hands-on experience with real-world technical projects and strengthen industry readiness early in my computer science education.}
+        \resumeItem{Completed technical training modules n Data Structures, Machine Learning, JavaScript, Python, and Git through Cornell University's online platform (Canvas).}
+        \resumeItem{Participated in industry-style technical and behavioral mock interviews with Software Engineer mentors to strengthen industry skills.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{Portfolio Website} $|$ \emph{React, Tailwind CSS, JavaScript, HTML, CSS}}{}
+      \resumeItemListStart
+        \resumeItem{Developed a responsive portfolio website to showcase projects, technical skills, personal interests, and accomplishments.}
+        \resumeItem{Built interactive project cards and smooth navigation to ensure consistent user experience across different browser engines and screen resolutions.}
+        \resumeItem{Styled an interface with Tailwind CSS and JavaScript, structuring the layout such that the design remained functional and accessible on both mobile and desktop devices.}
+      \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{AutoPay: Automated Invoice \& Payment System} $|$ \emph{Java, Spring Boot, MySQL, React, Tailwind CSS}}{}
+      \resumeItemListStart
+        \resumeItem{Developed a Java-based full-stack invoice management system using Spring Boot, MySQL, and a web interface built with HTML, CSS, and JavaScript. Users can create, view, and manage invoices through a responsive GUI.}
+        \resumeItem{Automated invoice generation, website calls clients via Twilio IVR to collect payment details, integrating real-time voice interactions with backend processing to protect user data, simplify billing and reduce manual workload.}
+      \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{Pokemon Clash Game} $|$ \emph{Java, Linux Bash Terminal, Git}}{}
+      \resumeItemListStart
+        \resumeItem{Built a text-based Pokémon game in Java with a menu-driven interface, featuring object-oriented design across Pokemon, Trainer, and Region classes to simulate dynamic team management and wild encounters.}
+        \resumeItem{Implemented robust file parsing, input validation, and array-based data structures to handle user interactions, error handling, and in-game operations such as capturing Pokémon, viewing stats, simulating fights, and managing trainer teams.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+  \resumeSubHeadingListStart  % USING THE SAME COMMAND AS OTHER SECTIONS
+    \item\small{
+      \textbf{Languages}{: Python, Java, JavaScript, C++, HTML/CSS; } \textbf{Frameworks}{: React, Spring Boot, Flask, Node.js; } \textbf{Libraries}{: Pandas, NumPy, Matplotlib, Scikit-learn;} 
+      \textbf{Tools/OS}{: Git, Github, Docker, MySQL, Excel, Vim, VS Code, Pycharm, IntelliJ, Jupyter Notebook, Linux}
+    }
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+
+\end{document}
